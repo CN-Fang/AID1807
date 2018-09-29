@@ -1,0 +1,40 @@
+确定技术点：
+    多进程
+    tcp套接字
+    mysql数据库
+    数据库查询
+    不知道
+
+建立数据表
+    3个表
+    user
+        id int
+        name varchar(20)
+        password varchar(20)
+
+    dict
+        id
+        word varchar(20) unique
+        jieshi varchar(20)
+    
+    history
+        id  int
+        name varchar(20)
+        word varchar(20)
+        time time
+
+项目分析
+    服务器 ： 登录，注册， 查词， 历史记录
+    客户端 ： 打印界面， 发出请求， 接受反馈， 打印结果
+    技术点 ： 并发  sys.fork
+            套接字 tcp套接字
+            数据库 mysql
+            查词   数据库查询（查词） |  文本查询
+    工作流程：  创建数据库， 存储数据----》搭建通信框架， 建立并发关系----》实现具体功能封装
+
+搭建通信框架
+
+
+分析功能，如何封装，每个功能具体实现什么内容
+
+
